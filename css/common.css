@@ -1,0 +1,17 @@
+/* Common CSS */
+
+@font-face {
+    font-family: ReemKufi;
+    src: url(../assets/fonts/ReemKufi-Regular.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'ReemKufi', sans-serif;
+}
+
+#main {
+    margin-left: 300px;
+    margin-top: 100px;
+}

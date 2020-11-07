@@ -1,0 +1,22 @@
+/* Navbar CSS */
+
+#app-navbar {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 1px 1px 5px gray;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 25px 10px 20px 30px;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    text-align-last: justify;
+}
+
+#app-navbar a {
+    text-decoration: none;
+}
+

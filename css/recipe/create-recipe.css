@@ -1,0 +1,482 @@
+/* Crear Receta CSS */
+
+#app-crear-receta {
+    margin: 0px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.inicio{
+    margin: 0px auto;
+}
+
+#app-crear-receta .imag{
+    height: 250px;
+    background-color: #bebebe;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app-crear-receta h3{
+    display: block;
+    text-align: center;
+    color: seashell;
+}
+
+.cont1, .cont2, .cont3{
+    margin: 0px auto;
+}
+
+.espsel{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+}
+
+#btnselect{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    padding: 10px;
+    color: white;
+    background: #004c98;
+    border: none;
+    width: auto;
+
+    box-shadow: 1px 1px 2px gray;
+}
+
+#btnselect:hover{
+    background-color: #0F68F1;
+}
+
+#camprec{
+    width: 99%;
+    height: 25px;
+    border: 1px solid blue;
+    outline: none;
+    box-shadow: 1px 1px 2px gray;
+}
+
+.num{
+    color: gray;
+    float: right;
+}
+
+.combobox{
+
+    margin-bottom: 35px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    
+}
+
+#tipo{
+    width: 45%;
+}
+
+#cocina{
+    width: 45%;
+}
+
+#app-crear-receta select{
+    padding-left: 20px;
+    height: 33px;
+    width: 100%;
+    border: 1px solid blue;
+
+    box-shadow: 1px 1px 2px gray;
+    outline: none;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: white;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+      linear-gradient(to bottom, white 0%,white 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+}
+
+.campos{
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#cp{
+    width: 28%;
+}
+
+#tp{
+    width: 28%;
+}
+
+#tc{
+    width: 28%;
+}
+
+#intp, #intc, #incp{
+    width: 100%;
+    height: 25px;
+    border: 1px solid blue;
+    box-shadow: 1px 1px 2px gray;
+    outline: none;
+}
+#incp{
+    text-align: end;
+}
+
+#intp, #intc{
+    text-align: center;
+}
+
+.mili{
+    text-align: right;
+    position: relative;
+ 
+    margin-top: 3px;
+    color: gray;
+}
+
+.txt{
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+}
+
+#descr{
+    width: 100%;
+    height: 70px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    outline: none;
+}
+
+#app-crear-receta textarea{
+    min-height: 70px;
+    max-height: 70px;
+    min-width: 100%;
+    max-width: 100%;
+
+    border: 1px solid blue;
+    box-shadow: 1px 1px 2px gray;
+}
+
+#app-crear-receta table{
+    margin-top: 10px;
+    border-collapse: collapse;
+    box-shadow: 1px 1px 2px gray;
+}
+
+#app-crear-receta td, 
+#app-crear-receta th{
+    border: 2px solid #004c98;
+}
+
+#app-crear-receta th{
+    background-color:#004c98;
+    color: white;
+    height: 35px;
+}
+
+#tbing td{
+    width: 700px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.cant{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.unid{
+    text-align: right;
+    padding-right: 10px;
+}
+
+#tbmate td{
+    height: 30px;
+    width: 700px;
+    padding-left: 10px;
+}
+
+.thicc{
+    width: 35%;
+}
+
+.thca, .thcu{
+    width: 20%;
+}
+
+.thacc{
+    width: 25%;
+}
+
+#prueba{
+    float: right;
+}
+
+#app-crear-receta img{
+    float: right;
+    width: 80px;
+}
+
+#botones{
+    display: flex;
+}
+
+.tags{
+    display: flex;
+    width: 100px;
+    height: 40px;
+    margin-top: 15px;
+    margin-right: 15px;
+    background-color: #f3d946;
+    padding: 5px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+#ts{
+    margin-bottom: 0;
+}
+
+.tgs{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+#ultbtn{
+    margin: 10px;
+    padding: 15px 30px 15px 30px;
+    color: white;
+    background: #004c98;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 2px gray;
+    float: inherit;
+    width: auto;
+}
+
+#ultbtn:hover{
+    background-color: #0F68F1;
+}
+
+#app-crear-receta p{
+    color: gray;
+}
+
+.ripple{
+
+    color: white;
+    background: #004c98;
+    float: right;
+    box-shadow: 1px 1px 2px gray;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 16px 16px;
+    text-align: center;
+    align-items: center;
+    width: 125px;
+    height: 43px;
+    display: flex;
+    
+    outline: none;
+
+    overflow: hidden;
+    
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    
+}
+
+#app-crear-receta [class*= far]{
+    cursor: pointer;
+    margin: 5px;
+    color: #e4d079;
+}
+
+#app-crear-receta [class*= fas]{
+    cursor: pointer;
+    margin: 5px;
+    color: #d95452;
+}
+
+.icns{
+    display: flex;
+    justify-content: center;
+}
+
+#app-crear-receta span{
+    font-size: 25px;
+}
+
+#app-crear-receta span .fas{
+    padding-left: 20px;
+}
+
+#edpu, #edpd{
+    margin-left: 20px;
+}
+
+.step h4{
+    margin-bottom: 0px;
+}
+
+#app-crear-receta p{
+    margin-top: 0px;
+}
+
+#ag1, #ag2, #ag3, #ag4{
+    color: #3cc0a9;
+    background-color: white;
+    border-radius: 100%;
+}
+
+#ex1, #ex2, #ex3, #ex4, #ex5{
+    cursor: inherit;
+    padding-left: 10px;
+    color: #d78c41;
+
+}
+
+.ripple-effect {
+	position: absolute;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	animation: animacion-ripple 2s;
+}
+
+.ripple:hover{
+    background-color: #0F5DAB;
+}
+
+@keyframes animacion-ripple {
+	from {
+		opacity: 0.4;
+
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
+	}
+
+	to {
+		opacity: 0;
+		
+		-webkit-transform: scale(100);
+		-ms-transform: scale(100);
+		-o-transform: scale(100);
+		transform: scale(100);
+	}
+}
+
+
+/* Responsive */
+@media (min-width: 768px){
+    .inicio{
+        width: 700px;
+    }
+
+    .cont1{
+        width: 700px;
+    }
+
+ 
+    .combobox{
+        width: 700px;
+    }
+
+    .tgs{
+        width: 400px;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .combobox{
+        width: 100%;
+        margin-top: 15px;
+        margin-right: 0px;
+    }
+
+}
+
+@media (max-width: 576px){
+    .combobox{
+        justify-content: none;
+    }
+
+    .combobox #tipo{
+        width: 100%;
+    }
+    .combobox #cocina{
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .campos{
+        justify-content: none;
+    }
+
+    .campos #cp{
+        width: 99%;
+    }
+
+    .campos #tp{
+        margin-top: 17px;
+        width: 99%;
+    }
+
+    .campos #tc{
+        width: 99%;
+    }
+
+    .tbling{
+        overflow-x: auto;
+    }
+
+}
+
+@media (max-width: 275px){
+
+    .tbling{
+        margin-top: 50px;
+    }
+
+    .tblmat{
+        margin-top: 65px;
+    }
+}
