@@ -12,7 +12,10 @@
     
     <!-- Font Awesome -->
     <link type="text/css" rel="stylesheet" href="./css/lib/font-awesome/css/all.min.css">
-    
+
+    <!-- Data Tables -->
+    <link rel="stylesheet" type="text/css" href="./assets/lib/datatables/datatables.min.css"/>
+
     <?php
         /*
             Obtiene el css de la pagina actual
