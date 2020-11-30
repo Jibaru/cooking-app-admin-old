@@ -6,6 +6,7 @@
     <title>Administrador</title>
     
     <!-- CSS Compartido -->
+    <link type="text/css" rel="stylesheet" href="./css/reset.css">
     <link type="text/css" rel="stylesheet" href="./css/common.css">
     <link type="text/css" rel="stylesheet" href="./css/menu.css">
     <link type="text/css" rel="stylesheet" href="./css/navbar.css">

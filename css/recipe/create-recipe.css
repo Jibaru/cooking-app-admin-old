@@ -6,14 +6,14 @@
     padding-right: 15px;
 }
 
-.inicio{
+.app-titulo-pagina {
     margin: 0px auto;
 }
 
-#app-crear-receta .imag{
+.app-contenedor-imagen {
     height: 250px;
-    background-color: #bebebe;
     margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,19 +25,11 @@
     color: seashell;
 }
 
-.cont1, .cont2, .cont3{
+.app-contenedor, .cont2, .cont3{
     margin: 0px auto;
 }
 
-.espsel{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: end;
-    align-items: center;
-}
+
 
 #btnselect{
     margin-top: 10px;
@@ -56,58 +48,6 @@
     background-color: #0F68F1;
 }
 
-#camprec{
-    width: 99%;
-    height: 25px;
-    border: 1px solid blue;
-    outline: none;
-    box-shadow: 1px 1px 2px gray;
-}
-
-.num{
-    color: gray;
-    float: right;
-}
-
-.combobox{
-
-    margin-bottom: 35px;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-
-    justify-content: space-between;
-    
-}
-
-#tipo{
-    width: 45%;
-}
-
-#cocina{
-    width: 45%;
-}
-
-#app-crear-receta select{
-    padding-left: 20px;
-    height: 33px;
-    width: 100%;
-    border: 1px solid blue;
-
-    box-shadow: 1px 1px 2px gray;
-    outline: none;
-
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: white;
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
-      linear-gradient(to bottom, white 0%,white 100%);
-    background-repeat: no-repeat, repeat;
-    background-position: right .7em top 50%, 0 0;
-    background-size: .65em auto, 100%;
-}
-
 .campos{
     width: 100%;
     display: flex;
@@ -116,46 +56,6 @@
     flex-wrap: wrap;
 }
 
-#cp{
-    width: 28%;
-}
-
-#tp{
-    width: 28%;
-}
-
-#tc{
-    width: 28%;
-}
-
-#intp, #intc, #incp{
-    width: 100%;
-    height: 25px;
-    border: 1px solid blue;
-    box-shadow: 1px 1px 2px gray;
-    outline: none;
-}
-#incp{
-    text-align: end;
-}
-
-#intp, #intc{
-    text-align: center;
-}
-
-.mili{
-    text-align: right;
-    position: relative;
- 
-    margin-top: 3px;
-    color: gray;
-}
-
-.txt{
-    width: 100%;
-    margin: 0px auto;
-    position: relative;
-}
 
 #descr{
     width: 100%;
@@ -166,15 +66,6 @@
     outline: none;
 }
 
-#app-crear-receta textarea{
-    min-height: 70px;
-    max-height: 70px;
-    min-width: 100%;
-    max-width: 100%;
-
-    border: 1px solid blue;
-    box-shadow: 1px 1px 2px gray;
-}
 
 #app-crear-receta table{
     margin-top: 10px;
@@ -294,6 +185,7 @@
     color: gray;
 }
 
+/*
 .ripple{
 
     color: white;
@@ -317,7 +209,7 @@
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
     
-}
+}*/
 
 #app-crear-receta [class*= far]{
     cursor: pointer;
@@ -334,14 +226,6 @@
 .icns{
     display: flex;
     justify-content: center;
-}
-
-#app-crear-receta span{
-    font-size: 25px;
-}
-
-#app-crear-receta span .fas{
-    padding-left: 20px;
 }
 
 #edpu, #edpd{
@@ -369,7 +253,7 @@
 
 }
 
-.ripple-effect {
+/*.ripple-effect {
 	position: absolute;
 	border-radius: 50%;
 	width: 50px;
@@ -380,7 +264,7 @@
 
 .ripple:hover{
     background-color: #0F5DAB;
-}
+}*/
 
 @keyframes animacion-ripple {
 	from {
@@ -409,12 +293,12 @@
         width: 700px;
     }
 
-    .cont1{
+    .app-contenedor{
         width: 700px;
     }
 
  
-    .combobox{
+    .app-ajustar-laterales{
         width: 700px;
     }
 
@@ -426,7 +310,7 @@
 
 @media (max-width: 768px){
 
-    .combobox{
+    .app-ajustar-laterales{
         width: 100%;
         margin-top: 15px;
         margin-right: 0px;
@@ -435,14 +319,14 @@
 }
 
 @media (max-width: 576px){
-    .combobox{
+    .app-ajustar-laterales{
         justify-content: none;
     }
 
-    .combobox #tipo{
+    .app-ajustar-laterales #tipo{
         width: 100%;
     }
-    .combobox #cocina{
+    .app-ajustar-laterales #cocina{
         margin-top: 10px;
         width: 100%;
     }
