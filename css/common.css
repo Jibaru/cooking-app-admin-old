@@ -91,6 +91,31 @@ time, mark, audio, video, button, select {
     color: var(--blanco);
 }
 
+.app-btn-amarillo{
+    background-color: var(--amarillo-alto);
+    color: var(--blanco);
+}
+
+.app-btn-tags{
+    box-shadow: 1px 1px 2px var(--gris);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    padding: 5px 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-right: 15px;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.app-tam-btn-modal{
+    height: 35px;
+}
+
 /* Campos (Input) */
 .app-campo {
     width: 100%;
@@ -99,6 +124,21 @@ time, mark, audio, video, button, select {
     box-sizing: border-box;
     outline: none;
     box-shadow: 1px 1px 2px var(--gris-bajo);
+}
+
+.app-altura-camp-modal{
+    height: 20px;
+}
+
+.app-altura-modal-selecc{
+    height: 25px;
+}
+
+.app-ajustar-textar{
+    max-height: 80px;
+    min-height: 80px;
+    max-width: 100%;
+    min-width: 100%;
 }
 
 .app-seleccionable {
@@ -157,6 +197,20 @@ time, mark, audio, video, button, select {
     text-align: right;
 }
 
+.app-ajustar-centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-contenedor-modal-imagen{
+    height: 100px;
+}
+
+.app-contenedor-modal-imagen-200{
+    height: 200px;
+}
+
 /* Tamaños */
 .app-ancho-28 {
     width: 28%;
@@ -174,6 +228,8 @@ time, mark, audio, video, button, select {
     width: 100%;
 }
 
+
+
 /* Márgenes */
 .app-mg-hor-10 {
     margin-left: 10px;
@@ -188,16 +244,73 @@ time, mark, audio, video, button, select {
 .app-mg-der-10 {
     margin-right: 10px;
 }
+.app-mg-der-20{
+    margin-right: 20px;
+}
+
+.app-mg-izq-10 {
+    margin-left: 10px;
+}
+
+.app-mg-izq-20 {
+    margin-left: 20px;
+}
+
+.app-mg-arr-22{
+    margin-top: 22px;
+}
+
+.app-mg-arr-35{
+    margin-top: 35px;
+}
+
+.app-mg-arr-15{
+    margin-top: 15px;
+}
 
 .app-mg-ab-10 {
     margin-bottom: 10px;
 }
 
+.app-mg-arr-10 {
+    margin-top: 10px;
+}
+
+.app-mg-ab-3 {
+    margin-bottom: 3px;
+}
+
+.app-mg-todo-5{
+    margin: 10px;
+}
+
+.app-mg-arr-30{
+    margin-top: 30px;
+}
+
+.app-mg-der-30{
+    margin-right: 30px;
+}
+
+
+/*padding*/
+.app-paddng-izq{
+    padding-left: 10px;
+    color: #d78c41;
+}
+
+
 /* Iconos */
 .app-icono {
     font-size: 25px;
-
 }
+
+.fa-check-circle{
+    color: green;
+    font-size: 30px;
+    margin-left: 3px;
+}
+
 
 /* Formas */
 .app-contenedor-circular {
@@ -205,6 +318,13 @@ time, mark, audio, video, button, select {
 }
 
 /* Tablas */
+
+.app-tabla-tamaño td{
+    width: 700px;
+    height: 30px;
+    padding-left: 10px;
+}
+
 .app-celda-texto-centro {
     vertical-align: middle;
 }
@@ -219,4 +339,66 @@ time, mark, audio, video, button, select {
 
 .app-col-5 {
     width: 41.6%;
+}
+
+.app-espacio-4{
+    width: 33.3%;
+}
+
+.app-espacio-8{
+    width: 66.6%;
+}
+
+.app-espacio-7{
+    width: 58.3%;
+}
+
+.app-celda-texto-der{
+    text-align: right;
+    padding-right: 10px;
+}
+
+
+/* Nivelar iconos edit y eliminar*/
+
+.app-centrar-icns{
+    text-align: center;
+}
+
+/*display*/
+
+.app-inline{
+    display: inline;
+}
+
+/*Tamaño de fuent*/
+.app-fs-25{
+    font-size: 25px;
+}
+
+
+/*Modal*/
+
+.app-mostrar-modal{
+    text-decoration: none;
+    transition: all 0.15s linear;
+}
+
+
+.app-espaciado{
+    width: 42%;
+}
+
+.app-cont-50{
+    width: 50%;
+}
+
+.borde-modal{
+    padding: 10px;
+    box-shadow: 2px 2px 2px cadetblue;
+}
+
+/*Centrar*/
+.app-centrar{
+    justify-content: center;
 }
