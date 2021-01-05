@@ -55,7 +55,6 @@
 
 
 .tgs{
-
     display: flex;
     flex-wrap: wrap;
 }
@@ -96,17 +95,7 @@
     
 }*/
 
-#app-crear-receta [class*= fa-edit]{
-    cursor: pointer;
-    margin: 5px;
-    color: #e4d079;
-}
 
-#app-crear-receta [class*= fa-trash]{
-    cursor: pointer;
-    margin: 5px;
-    color: #d95452;
-}
 
 #app-crear-receta p{
     margin-top: 0px;
@@ -120,14 +109,10 @@
 }
 
 
-
-
-
-
-
 /*Inicio modal*/
 
 
+/*
 .modal{
     width: 100vw;
     height: 100vh;
@@ -157,7 +142,6 @@
     transition: top 0.35s ease;
     z-index: 99999999;
     margin: auto;
-
 }
 
 .estilo{
@@ -212,7 +196,7 @@
     display: flex;
     flex-wrap: wrap;
 }
-
+*/
 /*@media(max-width:768px){
     .modal .content{
         width: 90%;
