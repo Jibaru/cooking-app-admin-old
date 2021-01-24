@@ -2,13 +2,13 @@
     <div class="app-contenedor">
         <h2>Creación de receta</h2>
     </div>
-    <div class="app-contenedor">
+    <div class="app-contenedor app-grid app-ajustar-columna-12 app-ajustar-columnas-pequenio">
         <div class="app-contenedor-imagen app-ajustar-centro app-fondo-gris-bajo ">
             <h3>Sin imagen</h3>
         </div>
     </div>
 
-    <div class="app-contenedor">
+    <div class="app-contenedor app-grid app-ajustar-columna-12 app-ajustar-columnas-pequenio">
         <div class="app-pos-izq">
             <button type="file" class="app-btn app-btn-azul">
                 Seleccionar imagen...
@@ -16,19 +16,21 @@
         </div>
     </div>
 
-    <div class="app-contenedor">
-        <label>Nombre de la receta</label>
-        <input type="text" class="app-campo" maxlength="45">
-        <div class="app-pos-izq app-texto-gris-alto">
-            <span>0/45</span>
+    <div class="app-contenedor app-grid app-ajustar-columna-12 app-ajustar-columnas-pequenio">
+        <div>
+            <label>Nombre de la receta</label>
+            <input type="text" class="app-campo" maxlength="45">
+            <div class="app-pos-izq app-texto-gris-alto">
+                <span>0/45</span>
+            </div>
         </div>
     </div>
 
     <div class="app-contenedor ">
-        <div class="app-ajustar-laterales app-mg-ab-10">
-            <div class="app-ancho-45">
+        <div class="app-ajustar-laterales app-mg-ab-10 app-grid app-ajustar-6-6-columnas app-ajustar-columnas-pequenio app-espacio-columnas-20">
+            <div class="">
                 <label>Tipo</label>
-                <select class="app-seleccionable">
+                <select class="app-seleccionable app-ancho-100p">
                     <option disabled selected>Seleccionar...</option>
                     <option value="volvo">Volvo</option>
                     <option value="saab">Saab</option>
@@ -36,9 +38,9 @@
                     <option value="audi">Audi</option>
                 </select>
             </div>
-            <div class="app-ancho-45">
+            <div class="">
                 <label>Cocina</label>
-                <select class="app-seleccionable">
+                <select class="app-seleccionable app-ancho-100p">
                     <option disabled selected>Seleccionar...</option>
                     <option value="volvo">Volvo</option>
                     <option value="saab">Saab</option>
@@ -49,30 +51,32 @@
         </div>
     </div>
 
-    <div class="app-contenedor">
-        <label>Descripcion breve</label>
+    <div class="app-contenedor app-grid app-ajustar-columna-12 app-ajustar-columnas-pequenio">
         <div>
-            <textarea name="descripcion" class="app-campo-area" cols="30" rows="8" maxlength="45"></textarea>
-        </div>
-        <div class="app-pos-izq app-texto-gris-alto">
-            <span>0/45</span>
+            <label>Descripcion breve</label>
+            <div>
+                <textarea name="descripcion" class="app-campo-area" cols="30" rows="8" maxlength="45"></textarea>
+            </div>
+            <div class="app-pos-izq app-texto-gris-alto">
+                <span>0/45</span>
+            </div>
         </div>
     </div>
 
     <div class="app-contenedor">
-        <div class="app-ajustar-laterales app-mg-ab-10">
-            <div class="app-ancho-28">
+        <div class="app-ajustar-laterales app-mg-ab-10 app-grid app-ajustar-4-4-4-columnas app-ajustar-columnas-pequenio app-espacio-columnas-20">
+            <div class="">
                 <label>Cantidad de personas</label>
                 <input type="number" class="app-campo app-texto-der" placeholder="1 persona">
             </div>
-            <div class="app-ancho-28">
+            <div class="">
                 <label>Tiempo de preparación</label>
                 <input type="text" class="app-campo app-texto-centro" placeholder="00:00">
                 <div class="app-pos-izq app-texto-gris-alto">
                     <span>0 milisegundos</span>
                 </div>
             </div>
-            <div class="app-ancho-28">
+            <div class="">
                 <label>Tiempo de cocción</label>
                 <input type="text" class="app-campo app-texto-centro" placeholder="00:00">
                 <div class="app-pos-izq app-texto-gris-alto">
@@ -99,9 +103,10 @@
                 <div id="abrir-modal-ingredientes" class="modal">
                     <div class="modal-content modal-content-medio">
 
-                        <h2 class="app-inline app-tam-fuente-25">Seleccionar ingrediente</h2>
-                        <i class="fas fa-times app-cerrar-modal"></i><br> 
-
+                        <div class="app-pos-der app-distancia">
+                            <h2 class="app-inline app-tam-fuente-25">Seleccionar ingrediente</h2>
+                            <i class="fas fa-times app-cerrar-modal app-posicion-boton-cerrar"></i>
+                        </div>
                             
                         <div class="app-pos-der app-mg-arr-15">
                             <i class="fas fa-search"></i>
@@ -109,161 +114,167 @@
                         </div>
                             
                         <div class="modal-body ajustar-contenedor">
-                            <div class="app-ancho-42 borde-modal  app-mg-todo-5 ajustar-contenedor" >
-                                <div class="app-contenedor-modal-imagen  app-fondo-gris-bajo app-col-5">
-                                    <a class="app-btn-flotante app-flotar-arriba-15">
-                                        <i class="fas fa-check-circle app-fondo-blanco"></i>
-                                    </a>                                        
-                                </div>
-                                <div class="app-mg-izq-10 app-cont-50">
-                                    Tomate <br>
-                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                    <div class="app-ajustar-laterales2 app-mg-arr-30">
-                                        <div class="app-ancho-45">
-                                            <input type="number" class="app-campo app-texto-der app-altura-modal-inputs" placeholder="1">
-                                        </div>
-                                        <div class="app-ancho-45">
-                                            <select class="app-seleccionable app-altura-modal-inputs">
-                                                <option value="kg">Kg</option>
-                                                <option value="volvo">Volvo</option>
-                                                <option value="saab">Saab</option>
-                                                <option value="mercedes">Mercedes</option>
-                                                <option value="audi">Audi</option>
-                                            </select>
+
+                            <div class="app-grid app-ajustar-6-6-columnas app-ajustar-columnas">
+
+                                <div class="borde-modal  app-mg-todo-5 ajustar-contenedor" >
+                                    <div class="app-contenedor-modal-imagen  app-fondo-gris-bajo app-col-5">
+                                        <a class="app-btn-flotante app-flotar-arriba-15">
+                                            <i class="fas fa-check-circle app-fondo-blanco"></i>
+                                        </a>                                        
+                                    </div>
+                                    <div class="app-mg-izq-10 app-cont-50">
+                                        Tomate <br>
+                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                        <div class="app-ajustar-laterales2 app-mg-arr-30">
+                                            <div class="app-ancho-45">
+                                                <input type="number" class="app-campo app-texto-der app-altura-modal-inputs" placeholder="1">
+                                            </div>
+                                            <div class="app-ancho-45">
+                                                <select class="app-seleccionable app-altura-modal-inputs">
+                                                    <option value="kg">Kg</option>
+                                                    <option value="volvo">Volvo</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="mercedes">Mercedes</option>
+                                                    <option value="audi">Audi</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="borde-modal  app-mg-todo-5 ajustar-contenedor">
+                                    <div class="app-contenedor-modal-imagen app-fondo-gris-bajo app-col-5">
+                                        <a class="app-btn-flotante app-flotar-arriba-15">
+                                            <i class="fas fa-check-circle app-fondo-blanco"></i>
+                                        </a>     
+                                    </div>
+                                    <div class="app-mg-izq-10 app-cont-50">
+                                        Rocoto <br>
+                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                        <div class="app-ajustar-laterales2 app-mg-arr-30">
+                                            <div class="app-ancho-45">
+                                                <input type="number" class="app-campo app-texto-der app-altura-modal-inputs" placeholder="1">
+                                            </div>
+                                            <div class="app-ancho-45">
+                                                <select class="app-seleccionable app-altura-modal-inputs">
+                                                    <option value="kg">Kg</option>
+                                                    <option value="volvo">Volvo</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="mercedes">Mercedes</option>
+                                                    <option value="audi">Audi</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="borde-modal  app-mg-todo-5 ajustar-contenedor">
+                                    <div class="app-contenedor-modal-imagen app-fondo-gris-bajo app-col-5">
+                                        <a class="app-btn-flotante app-flotar-arriba-15">
+                                            <i class="fas fa-check-circle app-fondo-blanco"></i>
+                                        </a>     
+                                    </div>
+                                    <div class="app-mg-izq-10 app-cont-50">
+                                        Arroz blanco <br>
+                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                        <div class="app-ajustar-laterales2 app-mg-arr-30">
+                                            <div class="app-ancho-45">
+                                                <input type="number" class="app-campo app-texto-der app-altura-modal-inputs" placeholder="1">
+                                            </div>
+                                            <div class="app-ancho-45">
+                                                <select class="app-seleccionable app-altura-modal-inputs">
+                                                    <option value="kg">Kg</option>
+                                                    <option value="volvo">Volvo</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="mercedes">Mercedes</option>
+                                                    <option value="audi">Audi</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="borde-modal  app-mg-todo-5 ajustar-contenedor">
+                                    <div class="app-contenedor-modal-imagen app-fondo-gris-bajo app-col-5">
+                                        <a class="app-btn-flotante app-flotar-arriba-15">
+                                            <i class="fas fa-check-circle app-fondo-blanco"></i>
+                                        </a>     
+                                    </div>
+                                    <div class="app-mg-izq-10 app-cont-50">
+                                        Perejil <br>
+                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                        <div class="app-ajustar-laterales2 app-mg-arr-30">
+                                            <div class="app-ancho-45">
+                                                <input type="number" class="app-campo app-texto-der app-altura-modal-inputs" placeholder="1">
+                                            </div>
+                                            <div class="app-ancho-45">
+                                                <select class="app-seleccionable app-altura-modal-inputs">
+                                                    <option value="kg">Kg</option>
+                                                    <option value="volvo">Volvo</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="mercedes">Mercedes</option>
+                                                    <option value="audi">Audi</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="borde-modal  app-mg-todo-5 ajustar-contenedor">
+                                    <div class="app-contenedor-modal-imagen app-fondo-gris-bajo app-col-5">
+                                        <a class="app-btn-flotante app-flotar-arriba-15">
+                                            <i class="fas fa-check-circle app-fondo-blanco"></i>
+                                        </a>     
+                                    </div>
+                                    <div class="app-mg-izq-10 app-cont-50">
+                                        Tomate <br>
+                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                        <div class="app-ajustar-laterales2 app-mg-arr-30">
+                                            <div class="app-ancho-45">
+                                                <input type="number" class="app-campo app-texto-der app-altura-modal-inputs" placeholder="1">
+                                            </div>
+                                            <div class="app-ancho-45">
+                                                <select class="app-seleccionable app-altura-modal-inputs">
+                                                    <option value="kg">Kg</option>
+                                                    <option value="volvo">Volvo</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="mercedes">Mercedes</option>
+                                                    <option value="audi">Audi</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="borde-modal  app-mg-todo-5 ajustar-contenedor">
+                                    <div class="app-contenedor-modal-imagen app-fondo-gris-bajo app-col-5">
+                                        <a class="app-btn-flotante app-flotar-arriba-15">
+                                            <i class="fas fa-check-circle app-fondo-blanco"></i>
+                                        </a>     
+                                    </div>
+                                    <div class="app-mg-izq-10 app-cont-50">
+                                        Tomate <br>
+                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                        <div class="app-ajustar-laterales2 app-mg-arr-30">
+                                            <div class="app-ancho-45">
+                                                <input type="number" class="app-campo app-texto-der app-altura-modal-inputs" placeholder="1">
+                                            </div>
+                                            <div class="app-ancho-45">
+                                                <select class="app-seleccionable app-altura-modal-inputs">
+                                                    <option value="kg">Kg</option>
+                                                    <option value="volvo">Volvo</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="mercedes">Mercedes</option>
+                                                    <option value="audi">Audi</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
 
-                            <div class="app-ancho-42 borde-modal  app-mg-todo-5 ajustar-contenedor">
-                                <div class="app-contenedor-modal-imagen app-fondo-gris-bajo app-col-5">
-                                    <a class="app-btn-flotante app-flotar-arriba-15">
-                                        <i class="fas fa-check-circle app-fondo-blanco"></i>
-                                    </a>     
-                                </div>
-                                <div class="app-mg-izq-10 app-cont-50">
-                                    Rocoto <br>
-                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                    <div class="app-ajustar-laterales2 app-mg-arr-30">
-                                        <div class="app-ancho-45">
-                                            <input type="number" class="app-campo app-texto-der app-altura-modal-inputs" placeholder="1">
-                                        </div>
-                                        <div class="app-ancho-45">
-                                            <select class="app-seleccionable app-altura-modal-inputs">
-                                                <option value="kg">Kg</option>
-                                                <option value="volvo">Volvo</option>
-                                                <option value="saab">Saab</option>
-                                                <option value="mercedes">Mercedes</option>
-                                                <option value="audi">Audi</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="app-ancho-42 borde-modal  app-mg-todo-5 ajustar-contenedor">
-                                <div class="app-contenedor-modal-imagen app-fondo-gris-bajo app-col-5">
-                                    <a class="app-btn-flotante app-flotar-arriba-15">
-                                        <i class="fas fa-check-circle app-fondo-blanco"></i>
-                                    </a>     
-                                </div>
-                                <div class="app-mg-izq-10 app-cont-50">
-                                    Arroz blanco <br>
-                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                    <div class="app-ajustar-laterales2 app-mg-arr-30">
-                                        <div class="app-ancho-45">
-                                            <input type="number" class="app-campo app-texto-der app-altura-modal-inputs" placeholder="1">
-                                        </div>
-                                        <div class="app-ancho-45">
-                                            <select class="app-seleccionable app-altura-modal-inputs">
-                                                <option value="kg">Kg</option>
-                                                <option value="volvo">Volvo</option>
-                                                <option value="saab">Saab</option>
-                                                <option value="mercedes">Mercedes</option>
-                                                <option value="audi">Audi</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="app-ancho-42 borde-modal  app-mg-todo-5 ajustar-contenedor">
-                                <div class="app-contenedor-modal-imagen app-fondo-gris-bajo app-col-5">
-                                    <a class="app-btn-flotante app-flotar-arriba-15">
-                                        <i class="fas fa-check-circle app-fondo-blanco"></i>
-                                    </a>     
-                                </div>
-                                <div class="app-mg-izq-10 app-cont-50">
-                                    Perejil <br>
-                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                    <div class="app-ajustar-laterales2 app-mg-arr-30">
-                                        <div class="app-ancho-45">
-                                            <input type="number" class="app-campo app-texto-der app-altura-modal-inputs" placeholder="1">
-                                        </div>
-                                        <div class="app-ancho-45">
-                                            <select class="app-seleccionable app-altura-modal-inputs">
-                                                <option value="kg">Kg</option>
-                                                <option value="volvo">Volvo</option>
-                                                <option value="saab">Saab</option>
-                                                <option value="mercedes">Mercedes</option>
-                                                <option value="audi">Audi</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="app-ancho-42 borde-modal  app-mg-todo-5 ajustar-contenedor">
-                                <div class="app-contenedor-modal-imagen app-fondo-gris-bajo app-col-5">
-                                    <a class="app-btn-flotante app-flotar-arriba-15">
-                                        <i class="fas fa-check-circle app-fondo-blanco"></i>
-                                    </a>     
-                                </div>
-                                <div class="app-mg-izq-10 app-cont-50">
-                                    Tomate <br>
-                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                    <div class="app-ajustar-laterales2 app-mg-arr-30">
-                                        <div class="app-ancho-45">
-                                            <input type="number" class="app-campo app-texto-der app-altura-modal-inputs" placeholder="1">
-                                        </div>
-                                        <div class="app-ancho-45">
-                                            <select class="app-seleccionable app-altura-modal-inputs">
-                                                <option value="kg">Kg</option>
-                                                <option value="volvo">Volvo</option>
-                                                <option value="saab">Saab</option>
-                                                <option value="mercedes">Mercedes</option>
-                                                <option value="audi">Audi</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="app-ancho-42 borde-modal  app-mg-todo-5 ajustar-contenedor">
-                                <div class="app-contenedor-modal-imagen app-fondo-gris-bajo app-col-5">
-                                    <a class="app-btn-flotante app-flotar-arriba-15">
-                                        <i class="fas fa-check-circle app-fondo-blanco"></i>
-                                    </a>     
-                                </div>
-                                <div class="app-mg-izq-10 app-cont-50">
-                                    Tomate <br>
-                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                    <div class="app-ajustar-laterales2 app-mg-arr-30">
-                                        <div class="app-ancho-45">
-                                            <input type="number" class="app-campo app-texto-der app-altura-modal-inputs" placeholder="1">
-                                        </div>
-                                        <div class="app-ancho-45">
-                                            <select class="app-seleccionable app-altura-modal-inputs">
-                                                <option value="kg">Kg</option>
-                                                <option value="volvo">Volvo</option>
-                                                <option value="saab">Saab</option>
-                                                <option value="mercedes">Mercedes</option>
-                                                <option value="audi">Audi</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div class="app-mg-arr-15 app-pos-izq app-mg-der-20">
 
@@ -283,54 +294,65 @@
                 <!--Inicio modal crear ingredientes-->
 
                 <div id="abrir-modal-nuevo-ingrediente" class="modal">
-                    <div class="modal-content modal-content-medio">
-
-                        <h2 class="app-inline app-tam-fuente-25 app-mg-todo-5">Crear ingrediente</h2>
-                        <i class="fas fa-times app-cerrar-modal"></i><br> 
+                    <div class="modal-content modal-content-medio app-max-altura-70p app-scroll-y">
+                        <div class="app-pos-der app-distancia">
+                            <h2 class="app-inline app-tam-fuente-25 app-mg-todo-5">Crear ingrediente</h2>
+                            <i class="fas fa-times app-cerrar-modal app-posicion-boton-cerrar"></i> 
+                        </div>
                             
-                        <div class="ajustar-contenedor ">
-                            <div class="app-contenedor-modal-imagen-200 app-mg-todo-5 app-fondo-gris-bajo app-col-5 app-ajustar-centro" >
-                                <h3>Sin imagen</h3>
-                            </div>
+                        <div class="">
 
-                            <div class="app-cont-50 app-mg-izq-10">
-                                <h1 class="app-mg-ab-3">Nombre</h1>
-                                <input type="text" class="app-campo app-mg-ab-10 app-altura-camp-modal" ></i>
-                                <h1 class="app-mg-ab-3">Descripcion</h1>
-                                <textarea class="app-campo-area app-ajustar-textar" cols="30" rows="8" maxlength="45"></textarea>
-                                <div class="ajustar-contenedor app-mg-arr-10 ">
-                                    <div class="app-ancho-45 app-mg-der-20">
-                                        <h1>Categoría</h1>
-                                        <select class="app-seleccionable" style="height:25px;">
-                                            <option >kg</option>
-                                            <option value="volvo">Volvo</option>
-                                            <option value="saab">Saab</option>
-                                            <option value="mercedes">Mercedes</option>
-                                            <option value="audi">Audi</option>
-                                        </select>
+                            <div class="app-grid app-ajustar-6-6-columnas app-ajustar-columnas-pequenio app-ajustar-columnas-medio">
+                                <div class="app-contenedor-modal-imagen-200 app-mg-todo-5 app-fondo-gris-bajo app-ajustar-centro" >
+                                    <h3>Sin imagen</h3>
+                                </div>
+
+                                <div class=" app-mg-izq-10">
+                                    <h1 class="app-mg-ab-3">Nombre</h1>
+                                    <input type="text" class="app-campo app-mg-ab-10 app-altura-camp-modal" ></i>
+                                    <h1 class="app-mg-ab-3">Descripcion</h1>
+                                    <textarea class="app-campo-area app-ajustar-textar" cols="30" rows="8" maxlength="45"></textarea>
+                                    <div class="ajustar-contenedor app-mg-arr-10 app-grid app-ajustar-6-6-columnas app-ajustar-columnas-pequenio app-espacio-columnas-7 ">
+                                        <div class="">
+                                            <h1>Categoría</h1>
+                                            <select class="app-seleccionable" style="height:25px;">
+                                                <option >kg</option>
+                                                <option value="volvo">Volvo</option>
+                                                <option value="saab">Saab</option>
+                                                <option value="mercedes">Mercedes</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+                                        </div>
+                                        <div class="">
+                                            <h1 style="font-size:15px;">Cantidad y unidades</h1>
+                                            <div class="app-grid app-ajustar-6-6-columnas app-ajustar-columnas-pequenio app-espacio-columnas-7">
+                                                <div>
+                                                    <input type="number" class="app-campo app-texto-der " placeholder="1" style="height:25px;">
+                                                </div>
+                                                <div>
+                                                    <select class="app-seleccionable" style="height:25px;">
+                                                        <option >kg</option>
+                                                        <option value="volvo">Volvo</option>
+                                                        <option value="saab">Saab</option>
+                                                        <option value="mercedes">Mercedes</option>
+                                                        <option value="audi">Audi</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        </div>
+                                        <div class="contenedor">
+
+                                            <button data-target="abrir-modal-crear-info-nutricional" class="app-btn app-btn-azul app-tam-btn-modal">
+                                                Información nutricional 
+                                                <i class="fas fa-chevron-right"></i>
+                                            </button>
+
+                                        </div>
+
                                     </div>
-                                    <div class="app-ancho-45 ajustar-contenedor">
-                                        <h1 style="font-size:15px;">Cantidad y unidades</h1>
-                                        <input type="number" class="app-campo app-texto-der app-ancho-45 app-mg-der-10" placeholder="1" style="height:25px;">
-                                        <select class="app-seleccionable app-ancho-45" style="height:25px;">
-                                            <option >kg</option>
-                                            <option value="volvo">Volvo</option>
-                                            <option value="saab">Saab</option>
-                                            <option value="mercedes">Mercedes</option>
-                                            <option value="audi">Audi</option>
-                                        </select>
-                                    </div>
-
-                                    </div>
-                                    <div class="contenedor">
-
-                                        <button data-target="abrir-modal-crear-info-nutricional" class="app-btn app-btn-azul app-tam-btn-modal">
-                                            Información nutricional 
-                                            <i class="fas fa-chevron-right"></i>
-                                        </button>
-
-                                    </div>
-
                                 </div>
                             </div>
                             <div class="contenedor">
@@ -350,15 +372,17 @@
                 <!--Inicio modal crear información nutricional-->
 
                 <div id="abrir-modal-crear-info-nutricional" class="modal">
-                    <div class="modal-content modal-content-medio">
+                    <div class="modal-content modal-content-medio app-max-altura-70p app-scroll-y">
 
-                        
-                        <i class="fas fa-times app-cerrar-modal"></i><br>
+                        <div class="app-pos-der app-distancia">
+                            <h2 class="app-inline app-tam-fuente-25">Crear información nutricional</h2>
+                            <i class="fas fa-times app-cerrar-modal app-posicion-boton-cerrar"></i>
+                        </div>
 
                         <div class="app-padding-15">
-                            <h2 class="app-inline app-tam-fuente-25">Crear información nutricional</h2>
-                            <div class="app-alinear">
-                                <div class="app-col-6">
+
+                            <div class="app-alinear app-grid app-ajustar-6-6-columnas app-ajustar-columnas-pequenio">
+                                <div class="">
                                     <div class="borde-modal app-col-6 app-mg-auto">
                                         <div>
                                             <label>Nutriente</label>
@@ -401,7 +425,7 @@
                                     </div>
 
                                 </div>
-                                <div class="app-col-6">
+                                <div class="">
                                     <table class="app-tabla-tamaño">
                                         <thead>
                                             <tr>
@@ -504,7 +528,7 @@
 
 
             </div>
-            <div class="tbling">
+            <div class="tbling app-tbl-responsive app-grid app-ajustar-columna-12 app-ajustar-columnas-pequenio">
                 <table class="app-tabla-tamaño">
                     <thead>
                         <tr>
@@ -581,10 +605,10 @@
                 <div id="modal-materiales" class="modal">
                         <div class="modal-content modal-content-medio">
  
-                 
-                                <h2 class="app-inline app-tam-fuente-25">Seleccionar Material</h2>
-                                <i class="fas fa-times app-cerrar-modal"></i><br> 
-
+                                <div class="app-pos-der app-distancia">
+                                    <h2 class="app-inline app-tam-fuente-25">Seleccionar Material</h2>
+                                    <i class="fas fa-times app-cerrar-modal app-posicion-boton-cerrar"></i> 
+                                </div>
                             
                                 <div class="app-pos-der app-mg-arr-15">
                                     <i class="fas fa-search"></i>
@@ -592,79 +616,81 @@
                                 </div>
                                 
                                 <div class="modal-body ajustar-contenedor">
-                                    <div class="app-ancho-42 borde-modal  app-mg-todo-5 ajustar-contenedor" >
-                                        <div class="app-contenedor-modal-imagen  app-fondo-gris-bajo app-col-5">
-                                            <a class="app-btn-flotante">
-                                                <i class="fas fa-check-circle app-fondo-blanco"></i>
-                                            </a>                                         
+                                    <div class="app-grid app-ajustar-6-6-columnas app-ajustar-columnas">
+                                        <div class="borde-modal  app-mg-todo-5 ajustar-contenedor" >
+                                            <div class="app-contenedor-modal-imagen  app-fondo-gris-bajo app-col-5">
+                                                <a class="app-btn-flotante app-flotar-arriba-15">
+                                                    <i class="fas fa-check-circle app-fondo-blanco"></i>
+                                                </a>                                         
+                                            </div>
+                                            <div class="app-mg-izq-10 app-cont-50">
+                                                Licuadora <br>
+                                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                            </div>
                                         </div>
-                                        <div class="app-mg-izq-10 app-cont-50">
-                                            Licuadora <br>
-                                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                        </div>
-                                    </div>
 
-                                    <div class="app-ancho-42 borde-modal  app-mg-todo-5 ajustar-contenedor">
-                                        <div class="app-contenedor-modal-imagen app-fondo-gris-bajo app-col-5">
-                                            <a class="app-btn-flotante">
-                                                <i class="fas fa-check-circle app-fondo-blanco"></i>
-                                            </a>      
+                                        <div class="borde-modal  app-mg-todo-5 ajustar-contenedor">
+                                            <div class="app-contenedor-modal-imagen app-fondo-gris-bajo app-col-5">
+                                                <a class="app-btn-flotante app-flotar-arriba-15">
+                                                    <i class="fas fa-check-circle app-fondo-blanco"></i>
+                                                </a>      
+                                            </div>
+                                            <div class="app-mg-izq-10 app-cont-50">
+                                                Batidora <br>
+                                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                            </div>
                                         </div>
-                                        <div class="app-mg-izq-10 app-cont-50">
-                                            Batidora <br>
-                                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                        </div>
-                                    </div>
 
-                                    <div class="app-ancho-42 borde-modal  app-mg-todo-5 ajustar-contenedor">
-                                        <div class="app-contenedor-modal-imagen app-fondo-gris-bajo app-col-5">
-                                            <a class="app-btn-flotante">
-                                                <i class="fas fa-check-circle app-fondo-blanco"></i>
-                                            </a>       
-                                        </div>
-                                        <div class="app-mg-izq-10 app-cont-50">
-                                            Coladora <br>
-                                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                        <div class="borde-modal  app-mg-todo-5 ajustar-contenedor">
+                                            <div class="app-contenedor-modal-imagen app-fondo-gris-bajo app-col-5">
+                                                <a class="app-btn-flotante app-flotar-arriba-15">
+                                                    <i class="fas fa-check-circle app-fondo-blanco"></i>
+                                                </a>       
+                                            </div>
+                                            <div class="app-mg-izq-10 app-cont-50">
+                                                Coladora <br>
+                                                <p>Lorem ipsum dolor sit amet consectetur.</p>
 
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="app-ancho-42 borde-modal  app-mg-todo-5 ajustar-contenedor">
-                                        <div class="app-contenedor-modal-imagen app-fondo-gris-bajo app-col-5">
-                                            <a class="app-btn-flotante">
-                                                <i class="fas fa-check-circle app-fondo-blanco"></i>
-                                            </a>    
+                                        <div class="borde-modal  app-mg-todo-5 ajustar-contenedor">
+                                            <div class="app-contenedor-modal-imagen app-fondo-gris-bajo app-col-5">
+                                                <a class="app-btn-flotante app-flotar-arriba-15">
+                                                    <i class="fas fa-check-circle app-fondo-blanco"></i>
+                                                </a>    
+                                            </div>
+                                            <div class="app-mg-izq-10 app-cont-50">
+                                                Rayador <br>
+                                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+                                            </div>
                                         </div>
-                                        <div class="app-mg-izq-10 app-cont-50">
-                                            Rayador <br>
-                                            <p>Lorem ipsum dolor sit amet consectetur.</p>
 
+                                        <div class="borde-modal  app-mg-todo-5 ajustar-contenedor">
+                                            <div class="app-contenedor-modal-imagen app-fondo-gris-bajo app-col-5">
+                                                <a class="app-btn-flotante app-flotar-arriba-15">
+                                                    <i class="fas fa-check-circle app-fondo-blanco"></i>
+                                                </a>        
+                                            </div>
+                                            <div class="app-mg-izq-10 app-cont-50">
+                                                Rayador <br>
+                                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="app-ancho-42 borde-modal  app-mg-todo-5 ajustar-contenedor">
-                                        <div class="app-contenedor-modal-imagen app-fondo-gris-bajo app-col-5">
-                                            <a class="app-btn-flotante">
-                                                <i class="fas fa-check-circle app-fondo-blanco"></i>
-                                            </a>        
-                                        </div>
-                                        <div class="app-mg-izq-10 app-cont-50">
-                                            Rayador <br>
-                                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                        <div class="borde-modal  app-mg-todo-5 ajustar-contenedor">
+                                            <div class="app-contenedor-modal-imagen app-fondo-gris-bajo app-col-5">
+                                                <a class="app-btn-flotante app-flotar-arriba-15">
+                                                    <i class="fas fa-check-circle app-fondo-blanco"></i>
+                                                </a>      
+                                            </div>
+                                            <div class="app-mg-izq-10 app-cont-50">
+                                                Rayador <br>
+                                                <p>Lorem ipsum dolor sit amet consectetur.</p>
 
-                                        </div>
-                                    </div>
-
-                                    <div class="app-ancho-42 borde-modal  app-mg-todo-5 ajustar-contenedor">
-                                        <div class="app-contenedor-modal-imagen app-fondo-gris-bajo app-col-5">
-                                            <a class="app-btn-flotante">
-                                                <i class="fas fa-check-circle app-fondo-blanco"></i>
-                                            </a>      
-                                        </div>
-                                        <div class="app-mg-izq-10 app-cont-50">
-                                            Rayador <br>
-                                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -690,9 +716,9 @@
                 <div id="abrir-modal-nuevo-material" class="modal">
                     <div class="modal-content modal-content-medio">
 
-                        <div>
+                        <div class="app-pos-der app-distancia">
                             <h2 class="app-inline app-tam-fuente-25 app-mg-todo-5">Crear Material</h2>
-                            <i class="fas fa-times app-cerrar-modal"></i><br> 
+                            <i class="fas fa-times app-cerrar-modal app-posicion-boton-cerrar"></i>
                         </div>
 
                             
@@ -721,46 +747,48 @@
                 <!--Fin modal crear material-->
 
 
-            <div class="tblmat">
-                <table class="app-tabla-tamaño">
-                    <tr>
-                        <th class="app-celda-texto-centro">Materiales</th>
-                        <th class="app-col2-9 app-celda-texto-centro">Acciones</th>
-                    </tr>
+            <div class="tblmat app-tbl-responsive ">
+                <div class="app-grid app-ajustar-columna-12 app-ajustar-columnas-pequenio">
+                    <table class="app-tabla-tamaño">
+                        <tr>
+                            <th class="app-celda-texto-centro">Materiales</th>
+                            <th class="app-col2-9 app-celda-texto-centro">Acciones</th>
+                        </tr>
 
-                    <tr>
-                        <td>Batidora</td>
-                        <td class="app-centrar-icns">
-                            <a>
+                        <tr>
+                            <td>Batidora</td>
+                            <td class="app-centrar-icns">
+                                <a>
+                                    <i class="far fa-edit"></i>
+                                </a>
+                                <a>
+                                    <i class="fas fa-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Licuadora</td>
+                            <td class="app-centrar-icns">
+                                <a>
+                                    <i class="far fa-edit"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fas fa-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Olla arrocera</td>
+                            <td class="app-centrar-icns">                   
                                 <i class="far fa-edit"></i>
-                            </a>
-                            <a>
                                 <i class="fas fa-trash"></i>
-                            </a>
-                        </td>
-                    </tr>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>Licuadora</td>
-                        <td class="app-centrar-icns">
-                            <a>
-                                <i class="far fa-edit"></i>
-                            </a>
-                            <a href="">
-                                <i class="fas fa-trash"></i>
-                            </a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Olla arrocera</td>
-                        <td class="app-centrar-icns">                   
-                            <i class="far fa-edit"></i>
-                            <i class="fas fa-trash"></i>
-                        </td>
-                    </tr>
-
-                </table>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
@@ -780,9 +808,9 @@
             <div id="modal-instrucciones" class="modal">
                 <div class="modal-content modal-content-medio">
 
-                    <div class="app-mg-ab-30">
+                    <div class="app-mg-ab-30 app-pos-der app-distancia">
                         <h2 class="app-inline app-tam-fuente-25 app-mg-todo-5">Crear Paso</h2>
-                        <i class="fas fa-times app-cerrar-modal"></i><br> 
+                        <i class="fas fa-times app-cerrar-modal app-posicion-boton-cerrar"></i> 
                     </div>
 
                     <div class="ajustar-contenedor ">
@@ -821,7 +849,7 @@
                 <div id="modal-agregar-paso" class="modal">
                     <div class="modal-content modal-content-medio">
 
-                        <i class="fas fa-times app-cerrar-modal"></i><br> 
+                        <i class="fas fa-times app-cerrar-modal app-posicion-boton-cerrar"></i> 
 
                         <div class="ajustar-contenedor modal-body app-mg-arr-15">
                                 
@@ -909,8 +937,12 @@
 
                     
                     <div class="modal-content modal-content-small">
-                        <h2 class="app-inline app-tam-fuente-25">Agregar Tags</h2>
-                        <i class="fas fa-times app-cerrar-modal"></i>    
+
+                        <div class="app-pos-der app-distancia">
+                            <h2 class="app-inline app-tam-fuente-25">Agregar Tags</h2>
+                            <i class="fas fa-times app-cerrar-modal app-posicion-boton-cerrar"></i>  
+                        </div>
+  
                         <div class="app-pos-der app-mg-arr-15">
 
                             <input type="text" class="app-campo app-mg-ab-10  app-altura-camp-modal" >

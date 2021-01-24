@@ -531,8 +531,8 @@ time, mark, audio, video, button, select {
     z-index: 99999999;
     left: 0;
     top: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center; 
     background-color: rgb(0, 0, 0); /* Fallback color */
@@ -572,7 +572,7 @@ time, mark, audio, video, button, select {
     padding: 10px;
     font-weight: bold;
     font-size: 1.5em;
-    float: right;
+
 }
 
 .modal-body{
@@ -633,4 +633,82 @@ time, mark, audio, video, button, select {
 .app-fondo-blanco{
     background-color: white;
     border-radius: 100%;
+}
+
+.app-posicion-boton-cerrar{
+    position: relative;
+    bottom: 10px;
+}
+
+
+.app-padding-35{
+  padding-right: .35rem;
+  padding-right: .35rem;
+}
+
+
+.app-grid{
+  display: grid;;
+}
+
+.app-ajustar-6-columnas{
+
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.app-ajustar-5-columnas{
+  grid-template-columns: 2fr 2fr 2fr 2fr 4fr;
+}
+
+.app-ajustar-10-2-columnas{
+  grid-template-columns: 10fr 2fr;
+}
+
+.app-columna-2{
+  grid-template-columns: 2fr;
+}
+
+.app-ajustar-6-6-columnas{
+  grid-template-columns: 6fr 6fr;
+}
+
+.app-ajustar-4-4-4-columnas{
+  grid-template-columns: 4fr 4fr 4fr;
+}
+
+.app-espacio-columnas-7{
+  column-gap: 7px;
+}
+
+.app-espacio-columnas-20{
+  column-gap: 20px;
+}
+
+.app-ajustar-columna-12{
+    grid-template-columns: 12fr;
+}
+
+@media(max-width: 1024px){
+  .app-ajustar-columnas{
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    row-gap: 10px;
+  }
+
+  .app-ajustar-columnas-pequenio{
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    row-gap: 10px;
+  }
+
+  .app-ajustar-tabla{
+    display: block;
+    overflow-x: auto;
+  }
+
+  .app-max-altura-70p{
+      max-height: 70%;
+  }
+
+  .app-scroll-y{
+      overflow-y: auto;
+  }
 }

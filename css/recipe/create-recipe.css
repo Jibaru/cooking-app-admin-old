@@ -280,6 +280,10 @@
         margin-right: 0px;
     }
 
+    .app-tbl-responsive{
+        overflow-x: auto;
+    }
+
 }
 
 @media (max-width: 576px){
@@ -310,10 +314,6 @@
 
     .campos #tc{
         width: 99%;
-    }
-
-    .tbling{
-        overflow-x: auto;
     }
 
 }
